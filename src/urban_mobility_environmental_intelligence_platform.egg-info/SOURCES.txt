@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+src/urban_mobility/__init__.py
+src/urban_mobility_environmental_intelligence_platform.egg-info/PKG-INFO
+src/urban_mobility_environmental_intelligence_platform.egg-info/SOURCES.txt
+src/urban_mobility_environmental_intelligence_platform.egg-info/dependency_links.txt
+src/urban_mobility_environmental_intelligence_platform.egg-info/requires.txt
+src/urban_mobility_environmental_intelligence_platform.egg-info/top_level.txt
+tests/test_foundation.py
