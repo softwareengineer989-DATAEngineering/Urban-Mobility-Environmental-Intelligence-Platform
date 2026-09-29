@@ -1,0 +1,155 @@
+{
+  "generated_at_utc": "2026-09-27T11:55:45.900633+00:00",
+  "phase": "phase1",
+  "sources": {
+    "noaa": {
+      "files": [
+        {
+          "content_length_header": null,
+          "path": "data\\raw\\noaa\\global_hourly\\72505394728_2024_q1.csv",
+          "sha256": "4afc4bccb7d5dbe49b38e3ed8b92b790f05dfe594855e1d730e0e6683061a89a",
+          "size_bytes": 2216239,
+          "source": "NOAA NCEI Global Hourly",
+          "station_id": "72505394728",
+          "station_name": "New York Central Park",
+          "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72505394728&startDate=2024-01-01&endDate=2024-03-31&format=csv&units=metric"
+        },
+        {
+          "content_length_header": null,
+          "path": "data\\raw\\noaa\\global_hourly\\72503014732_2024_q1.csv",
+          "sha256": "5a13fd017a579fe6e8976730456685c884e3bab38ad71063d557bc19517e7223",
+          "size_bytes": 2554539,
+          "source": "NOAA NCEI Global Hourly",
+          "station_id": "72503014732",
+          "station_name": "LaGuardia Airport",
+          "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72503014732&startDate=2024-01-01&endDate=2024-03-31&format=csv&units=metric"
+        },
+        {
+          "content_length_header": null,
+          "path": "data\\raw\\noaa\\global_hourly\\74486094789_2024_q1.csv",
+          "sha256": "a74fbcf736a594c24c2c190659ff1db59e1d942f523398c9fd89447cf8dd8636",
+          "size_bytes": 2480130,
+          "source": "NOAA NCEI Global Hourly",
+          "station_id": "74486094789",
+          "station_name": "JFK International Airport",
+          "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=74486094789&startDate=2024-01-01&endDate=2024-03-31&format=csv&units=metric"
+        }
+      ],
+      "retrieved_at_utc": "2026-09-27T11:56:14.448105+00:00"
+    },
+    "openaq": {
+      "pagination_pages": {
+        "1099": 0,
+        "1522": 0,
+        "1523": 0,
+        "671": 13,
+        "673": 13
+      },
+      "path": "data\\raw\\openaq\\openaq_nyc_2024_q1.json",
+      "record_count": 3960,
+      "retrieved_at_utc": "2026-09-27T11:58:10.224437+00:00",
+      "selected_sensors": [
+        {
+          "datetime_first": null,
+          "datetime_last": null,
+          "location_id": 853,
+          "location_name": "East Orange",
+          "parameter": "co",
+          "sensor_id": 1522,
+          "units": "ppm"
+        },
+        {
+          "datetime_first": null,
+          "datetime_last": null,
+          "location_id": 853,
+          "location_name": "East Orange",
+          "parameter": "no2",
+          "sensor_id": 1523,
+          "units": "ppm"
+        },
+        {
+          "datetime_first": null,
+          "datetime_last": null,
+          "location_id": 384,
+          "location_name": "CCNY",
+          "parameter": "o3",
+          "sensor_id": 671,
+          "units": "ppm"
+        },
+        {
+          "datetime_first": null,
+          "datetime_last": null,
+          "location_id": 626,
+          "location_name": "Bronx - IS52",
+          "parameter": "pm10",
+          "sensor_id": 1099,
+          "units": "\u00b5g/m\u00b3"
+        },
+        {
+          "datetime_first": null,
+          "datetime_last": null,
+          "location_id": 384,
+          "location_name": "CCNY",
+          "parameter": "pm25",
+          "sensor_id": 673,
+          "units": "\u00b5g/m\u00b3"
+        }
+      ],
+      "sha256": "181f7c2c01a2808ca4091a2e7be8b57c11ea6ab2e48c5b0dbb9d784bf0b3bfa2",
+      "size_bytes": 5596101
+    },
+    "taxi_zones": {
+      "lookup": {
+        "content_length_header": "12331",
+        "path": "data\\raw\\taxi_zones\\taxi_zone_lookup.csv",
+        "sha256": "1a99e105092230f8620f301edcca7f80d3080642ff404d28ed957d3fa222c8ed",
+        "size_bytes": 12331,
+        "url": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv"
+      },
+      "retrieved_at_utc": "2026-09-27T11:56:15.687741+00:00",
+      "shapefile": {
+        "content_length_header": "1022574",
+        "path": "data\\raw\\taxi_zones\\taxi_zones.zip",
+        "sha256": "f6d711917bb4340f8f644d5366c51665489eb2d426dd1a4a55677721ae5adf17",
+        "size_bytes": 1022574,
+        "url": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zones.zip"
+      }
+    },
+    "tlc": {
+      "files": [
+        {
+          "content_length_header": "49961641",
+          "month": "2024-01",
+          "path": "data\\raw\\tlc\\yellow\\yellow_tripdata_2024-01.parquet",
+          "sha256": "c4d59da7bbc8abaeeeb1727947ee93d9891a71acb42854bd80db1571b2030510",
+          "size_bytes": 49961641,
+          "source": "NYC TLC Yellow Taxi",
+          "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet"
+        },
+        {
+          "content_length_header": "50349284",
+          "month": "2024-02",
+          "path": "data\\raw\\tlc\\yellow\\yellow_tripdata_2024-02.parquet",
+          "sha256": "c76c43c18c6c6664080dd920baab4928988d5786a6b65980792ca7cd796f9f20",
+          "size_bytes": 50349284,
+          "source": "NYC TLC Yellow Taxi",
+          "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet"
+        },
+        {
+          "content_length_header": "60078280",
+          "month": "2024-03",
+          "path": "data\\raw\\tlc\\yellow\\yellow_tripdata_2024-03.parquet",
+          "sha256": "2d4cdc8fb96726cdd3803b13b02d2e61e71d45720aff0ebc693a8bdd1f249823",
+          "size_bytes": 60078280,
+          "source": "NYC TLC Yellow Taxi",
+          "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet"
+        }
+      ],
+      "retrieved_at_utc": "2026-09-27T11:56:01.814707+00:00"
+    }
+  },
+  "window": {
+    "end": "2024-03-31",
+    "start": "2024-01-01"
+  }
+}
