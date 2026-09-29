@@ -1,0 +1,100 @@
+{
+  "phase": "phase1",
+  "name": "Dataset Acquisition and Validation",
+  "window": {
+    "start": "2024-01-01",
+    "end": "2024-03-31"
+  },
+  "sources": {
+    "tlc": {
+      "name": "NYC TLC Yellow Taxi Trip Records",
+      "source_url": "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page",
+      "format": "parquet",
+      "service": "yellow",
+      "files": [
+        {
+          "month": "2024-01",
+          "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-01.parquet",
+          "path": "data/raw/tlc/yellow/yellow_tripdata_2024-01.parquet"
+        },
+        {
+          "month": "2024-02",
+          "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-02.parquet",
+          "path": "data/raw/tlc/yellow/yellow_tripdata_2024-02.parquet"
+        },
+        {
+          "month": "2024-03",
+          "url": "https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2024-03.parquet",
+          "path": "data/raw/tlc/yellow/yellow_tripdata_2024-03.parquet"
+        }
+      ],
+      "required_columns": [
+        "VendorID",
+        "tpep_pickup_datetime",
+        "tpep_dropoff_datetime",
+        "passenger_count",
+        "trip_distance",
+        "RatecodeID",
+        "store_and_fwd_flag",
+        "PULocationID",
+        "DOLocationID",
+        "payment_type",
+        "fare_amount",
+        "tip_amount",
+        "total_amount"
+      ]
+    },
+    "noaa": {
+      "name": "NOAA NCEI Global Hourly NYC-area observations",
+      "source_url": "https://www.ncei.noaa.gov/access/search/datasets/global-hourly/",
+      "dataset": "global-hourly",
+      "format": "csv",
+      "stations": [
+        {
+          "name": "New York Central Park",
+          "station_id": "72505394728",
+          "path": "data/raw/noaa/global_hourly/72505394728_2024_q1.csv"
+        },
+        {
+          "name": "LaGuardia Airport",
+          "station_id": "72503014732",
+          "path": "data/raw/noaa/global_hourly/72503014732_2024_q1.csv"
+        },
+        {
+          "name": "JFK International Airport",
+          "station_id": "74486094789",
+          "path": "data/raw/noaa/global_hourly/74486094789_2024_q1.csv"
+        }
+      ]
+    },
+    "openaq": {
+      "name": "OpenAQ NYC-area air-quality measurements",
+      "source_url": "https://docs.openaq.org/",
+      "api_base_url": "https://api.openaq.org/v3",
+      "format": "json",
+      "bbox": [
+        -74.2591,
+        40.4774,
+        -73.7004,
+        40.9176
+      ],
+      "parameters": [
+        "pm25",
+        "pm10",
+        "no2",
+        "o3",
+        "co"
+      ],
+      "max_sensors": 5,
+      "path": "data/raw/openaq/openaq_nyc_2024_q1.json"
+    },
+    "taxi_zones": {
+      "name": "NYC TLC Taxi Zone Reference Data",
+      "source_url": "https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page",
+      "lookup_url": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zone_lookup.csv",
+      "lookup_path": "data/raw/taxi_zones/taxi_zone_lookup.csv",
+      "shapefile_url": "https://d37ci6vzurychx.cloudfront.net/misc/taxi_zones.zip",
+      "shapefile_path": "data/raw/taxi_zones/taxi_zones.zip"
+    }
+  }
+}

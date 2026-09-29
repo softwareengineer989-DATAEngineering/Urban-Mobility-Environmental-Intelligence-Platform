@@ -1,17 +1,22 @@
 ﻿# ============================================================
 # Python
 # ============================================================
+
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+
 .pytest_cache/
 .ruff_cache/
 .mypy_cache/
 .coverage
 htmlcov/
 
+# ============================================================
 # Virtual environments
+# ============================================================
+
 .venv/
 venv/
 env/
@@ -20,6 +25,7 @@ ENV/
 # ============================================================
 # Environment / Secrets
 # ============================================================
+
 .env
 .env.*
 !.env.example
@@ -27,38 +33,51 @@ ENV/
 *.pem
 *.key
 *.crt
+
 credentials.json
 secrets.json
 
 # ============================================================
-# Data — NEVER COMMIT RAW OR GENERATED DATA
+# Project Data
 # ============================================================
-data/raw/*
-data/bronze/*
-data/silver/*
-data/curated/*
 
-# Preserve directory structure
+# Raw/source datasets
+data/raw/*
 !data/raw/.gitkeep
+
+# Generated Bronze data
+data/bronze/*
 !data/bronze/.gitkeep
+
+# Generated Silver data
+data/silver/*
 !data/silver/.gitkeep
+
+# Generated Curated data
+data/curated/*
 !data/curated/.gitkeep
 
-# Common data formats
-*.csv
-*.csv.gz
-*.parquet
-*.json
-*.jsonl
-*.zip
-*.tar
-*.tar.gz
-*.avro
-*.orc
+# Machine-local/generated metadata
+data/metadata/*.local.json
+
+# Temporary/incomplete downloads
+*.partial
+
+# Common dataset archives ONLY under data/
+data/**/*.csv
+data/**/*.csv.gz
+data/**/*.parquet
+data/**/*.jsonl
+data/**/*.zip
+data/**/*.tar
+data/**/*.tar.gz
+data/**/*.avro
+data/**/*.orc
 
 # ============================================================
 # Spark
 # ============================================================
+
 .sparkStaging/
 spark-warehouse/
 metastore_db/
@@ -67,6 +86,7 @@ derby.log/
 # ============================================================
 # Airflow
 # ============================================================
+
 airflow.db
 airflow.cfg
 airflow-webserver.pid
@@ -76,6 +96,7 @@ logs/
 # ============================================================
 # dbt
 # ============================================================
+
 dbt_packages/
 target/
 logs/
@@ -84,6 +105,7 @@ logs/
 # ============================================================
 # Terraform
 # ============================================================
+
 .terraform/
 *.tfstate
 *.tfstate.*
@@ -99,17 +121,20 @@ override.tf.json
 # ============================================================
 # AWS
 # ============================================================
+
 .aws/
 .aws-sam/
 
 # ============================================================
 # Docker
 # ============================================================
+
 docker-compose.override.yml
 
 # ============================================================
 # IDE
 # ============================================================
+
 .idea/
 .vscode/
 *.iml
@@ -117,6 +142,7 @@ docker-compose.override.yml
 # ============================================================
 # OS
 # ============================================================
+
 .DS_Store
 Thumbs.db
 desktop.ini
@@ -124,11 +150,13 @@ desktop.ini
 # ============================================================
 # Logs
 # ============================================================
+
 *.log
 
 # ============================================================
 # Temporary files
 # ============================================================
+
 *.tmp
 *.temp
 *.swp
