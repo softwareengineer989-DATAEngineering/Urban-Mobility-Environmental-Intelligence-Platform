@@ -1,0 +1,118 @@
+{
+  "algorithm": "SHA-256",
+  "bucket": "urban-mobility-dev-data-20260930-412004015614-us-east-1-an",
+  "generated_at_utc": "2026-09-30T11:32:26.527769+00:00",
+  "name": "S3 Raw Object Integrity Manifest",
+  "objects": [
+    {
+      "etag": "\"6d3e953d8949483f8e6d0e21b1455c2c\"",
+      "key": "raw/noaa/global_hourly/72503014732_2024_q1.csv",
+      "last_modified": "2026-09-30T10:23:09+00:00",
+      "s3_checksums": {
+        "ChecksumCRC64NVME": "Jq/natDf+yU=",
+        "ChecksumType": "FULL_OBJECT"
+      },
+      "server_side_encryption": "AES256",
+      "sha256": "5a13fd017a579fe6e8976730456685c884e3bab38ad71063d557bc19517e7223",
+      "size_bytes": 2554539
+    },
+    {
+      "etag": "\"0fdc9576dd2b9c372902f392f747861e\"",
+      "key": "raw/noaa/global_hourly/72505394728_2024_q1.csv",
+      "last_modified": "2026-09-30T10:23:09+00:00",
+      "s3_checksums": {
+        "ChecksumCRC64NVME": "IyLOWYL2Uzw=",
+        "ChecksumType": "FULL_OBJECT"
+      },
+      "server_side_encryption": "AES256",
+      "sha256": "4afc4bccb7d5dbe49b38e3ed8b92b790f05dfe594855e1d730e0e6683061a89a",
+      "size_bytes": 2216239
+    },
+    {
+      "etag": "\"31992a932033d8e5a3ab430d69f0abf2\"",
+      "key": "raw/noaa/global_hourly/74486094789_2024_q1.csv",
+      "last_modified": "2026-09-30T10:23:08+00:00",
+      "s3_checksums": {
+        "ChecksumCRC64NVME": "kCfoxn1d1KU=",
+        "ChecksumType": "FULL_OBJECT"
+      },
+      "server_side_encryption": "AES256",
+      "sha256": "a74fbcf736a594c24c2c190659ff1db59e1d942f523398c9fd89447cf8dd8636",
+      "size_bytes": 2480130
+    },
+    {
+      "etag": "\"4f78a406ab6b4e6914e51d289546b8ee\"",
+      "key": "raw/openaq/openaq_nyc_2024_q1.json",
+      "last_modified": "2026-09-30T10:23:21+00:00",
+      "s3_checksums": {
+        "ChecksumCRC64NVME": "SYZqgKyQs0I=",
+        "ChecksumType": "FULL_OBJECT"
+      },
+      "server_side_encryption": "AES256",
+      "sha256": "181f7c2c01a2808ca4091a2e7be8b57c11ea6ab2e48c5b0dbb9d784bf0b3bfa2",
+      "size_bytes": 5596101
+    },
+    {
+      "etag": "\"c6064b7c144c716450641f769659d178\"",
+      "key": "raw/taxi_zones/taxi_zone_lookup.csv",
+      "last_modified": "2026-09-30T10:23:43+00:00",
+      "s3_checksums": {
+        "ChecksumCRC64NVME": "HtZ2Mk1W0rQ=",
+        "ChecksumType": "FULL_OBJECT"
+      },
+      "server_side_encryption": "AES256",
+      "sha256": "1a99e105092230f8620f301edcca7f80d3080642ff404d28ed957d3fa222c8ed",
+      "size_bytes": 12331
+    },
+    {
+      "etag": "\"06c63faa34f0bf832c86e37fcde13594\"",
+      "key": "raw/taxi_zones/taxi_zones.zip",
+      "last_modified": "2026-09-30T10:23:43+00:00",
+      "s3_checksums": {
+        "ChecksumCRC64NVME": "FQ4cNVls+oA=",
+        "ChecksumType": "FULL_OBJECT"
+      },
+      "server_side_encryption": "AES256",
+      "sha256": "f6d711917bb4340f8f644d5366c51665489eb2d426dd1a4a55677721ae5adf17",
+      "size_bytes": 1022574
+    },
+    {
+      "etag": "\"de787c2675a64e958f894491fbe25b9d-6\"",
+      "key": "raw/tlc/yellow/yellow_tripdata_2024-01.parquet",
+      "last_modified": "2026-09-30T10:22:42+00:00",
+      "s3_checksums": {
+        "ChecksumCRC64NVME": "m1sYJnHnUeI=",
+        "ChecksumType": "FULL_OBJECT"
+      },
+      "server_side_encryption": "AES256",
+      "sha256": "c4d59da7bbc8abaeeeb1727947ee93d9891a71acb42854bd80db1571b2030510",
+      "size_bytes": 49961641
+    },
+    {
+      "etag": "\"a386bbfd9e06e5737df0931adfb6b6b6-7\"",
+      "key": "raw/tlc/yellow/yellow_tripdata_2024-02.parquet",
+      "last_modified": "2026-09-30T10:22:35+00:00",
+      "s3_checksums": {
+        "ChecksumCRC64NVME": "wwOuiE1/Pnw=",
+        "ChecksumType": "FULL_OBJECT"
+      },
+      "server_side_encryption": "AES256",
+      "sha256": "c76c43c18c6c6664080dd920baab4928988d5786a6b65980792ca7cd796f9f20",
+      "size_bytes": 50349284
+    },
+    {
+      "etag": "\"d43ee4652601bc433ce240e4b1515c84-8\"",
+      "key": "raw/tlc/yellow/yellow_tripdata_2024-03.parquet",
+      "last_modified": "2026-09-30T10:22:34+00:00",
+      "s3_checksums": {
+        "ChecksumCRC64NVME": "TjJ7iUa+wto=",
+        "ChecksumType": "FULL_OBJECT"
+      },
+      "server_side_encryption": "AES256",
+      "sha256": "2d4cdc8fb96726cdd3803b13b02d2e61e71d45720aff0ebc693a8bdd1f249823",
+      "size_bytes": 60078280
+    }
+  ],
+  "phase": "phase2",
+  "region": "us-east-1"
+}

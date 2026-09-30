@@ -8,13 +8,16 @@ version = "0.1.0"
 description = "Enterprise-grade urban mobility and environmental intelligence data platform."
 requires-python = ">=3.13"
 readme = "README.md"
+dependencies = [
+    "boto3>=1.40,<2.0",
+    "python-dotenv>=1.0,<2.0",
+]
 
 [project.optional-dependencies]
 dev = [
     "pytest>=8.3,<9",
     "ruff>=0.12,<1",
     "pyarrow>=18.0.0,<24.0.0",
-    "python-dotenv>=1.0,<2.0",
 ]
 
 [tool.setuptools.packages.find]
@@ -33,5 +36,5 @@ target-version = "py313"
 select = [
     "E",
     "F",
-    "I"
+    "I",
 ]
