@@ -1,0 +1,45 @@
+{
+  "project_name": "urban-mobility-environmental-intelligence-platform",
+  "environment": "dev",
+  "cloud": {
+    "provider": "aws",
+    "region": "us-east-1",
+    "storage": {
+      "type": "s3",
+      "bucket": "urban-mobility-dev-data-20260930-412004015614-us-east-1-an"
+    }
+  },
+  "data_sources": [
+    "tlc",
+    "noaa",
+    "openaq",
+    "taxi_zones"
+  ],
+  "storage_layers": {
+    "raw": "raw/",
+    "bronze": "bronze/",
+    "silver": "silver/",
+    "curated": "curated/",
+    "metadata": "metadata/",
+    "checkpoints": "checkpoints/",
+    "temporary": "tmp/"
+  },
+  "processing": {
+    "primary_engine": "pyspark",
+    "table_format": "apache_iceberg"
+  },
+  "orchestration": {
+    "engine": "airflow"
+  },
+  "warehouse": {
+    "engine": "snowflake"
+  },
+  "transformation": {
+    "engine": "dbt"
+  },
+  "streaming": {
+    "enabled": true,
+    "engine": "kafka",
+    "spark_structured_streaming": true
+  }
+}

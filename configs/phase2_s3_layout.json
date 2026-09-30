@@ -1,0 +1,45 @@
+{
+  "project": "urban-mobility-environmental-intelligence-platform",
+  "environment": "dev",
+  "aws": {
+    "region": "us-east-1",
+    "bucket": "urban-mobility-dev-data-20260930-412004015614-us-east-1-an"
+  },
+  "sources": {
+    "tlc": {
+      "raw_prefix": "raw/tlc/",
+      "bronze_prefix": "bronze/tlc/",
+      "silver_prefix": "silver/tlc/",
+      "checkpoint_prefix": "checkpoints/tlc/"
+    },
+    "noaa": {
+      "raw_prefix": "raw/noaa/",
+      "bronze_prefix": "bronze/noaa/",
+      "silver_prefix": "silver/noaa/",
+      "checkpoint_prefix": "checkpoints/noaa/"
+    },
+    "openaq": {
+      "raw_prefix": "raw/openaq/",
+      "bronze_prefix": "bronze/openaq/",
+      "silver_prefix": "silver/openaq/",
+      "checkpoint_prefix": "checkpoints/openaq/"
+    },
+    "taxi_zones": {
+      "raw_prefix": "raw/taxi_zones/",
+      "bronze_prefix": "bronze/taxi_zones/",
+      "silver_prefix": "silver/taxi_zones/"
+    }
+  },
+  "curated": {
+    "mobility": "curated/mobility/",
+    "weather": "curated/weather/",
+    "air_quality": "curated/air_quality/",
+    "geospatial": "curated/geospatial/"
+  },
+  "metadata": {
+    "schemas": "metadata/schemas/",
+    "manifests": "metadata/manifests/",
+    "checksums": "metadata/checksums/"
+  },
+  "temporary": "tmp/"
+}

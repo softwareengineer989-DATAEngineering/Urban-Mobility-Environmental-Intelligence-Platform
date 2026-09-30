@@ -1,0 +1,40 @@
+{
+  "project": "urban-mobility-environmental-intelligence-platform",
+  "environment": "dev",
+  "version": "1.0.0",
+  "aws_region": "us-east-1",
+  "s3_bucket": "urban-mobility-dev-data-20260930-412004015614-us-east-1-an",
+  "sources": [
+    {
+      "name": "tlc",
+      "type": "batch",
+      "raw_prefix": "raw/tlc/",
+      "bronze_prefix": "bronze/tlc/",
+      "silver_prefix": "silver/tlc/"
+    },
+    {
+      "name": "noaa",
+      "type": "incremental_batch",
+      "raw_prefix": "raw/noaa/",
+      "bronze_prefix": "bronze/noaa/",
+      "silver_prefix": "silver/noaa/"
+    },
+    {
+      "name": "openaq",
+      "type": "api_streaming",
+      "raw_prefix": "raw/openaq/",
+      "bronze_prefix": "bronze/openaq/",
+      "silver_prefix": "silver/openaq/"
+    },
+    {
+      "name": "taxi_zones",
+      "type": "static_reference",
+      "raw_prefix": "raw/taxi_zones/",
+      "bronze_prefix": "bronze/taxi_zones/",
+      "silver_prefix": "silver/taxi_zones/"
+    }
+  ],
+  "metadata_prefix": "metadata/",
+  "checkpoint_prefix": "checkpoints/",
+  "curated_prefix": "curated/"
+}
